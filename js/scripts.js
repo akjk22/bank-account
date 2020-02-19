@@ -8,7 +8,17 @@ function bankAccount(name, initialDeposit, deposit, withdrawal) {
 
 };
 
+bankAccount.prototype.register = function() {
+    return "You're registered " + this.name;
+};
 
+bankAccount.prototype.deposit = function() {
+    
+};
+
+bankAccount.prototype.withdraw = function() {
+    
+};
 
 
 
@@ -23,7 +33,7 @@ $(document).ready(function() {
         
         var bankAccount1 = new bankAccount(name, initialDeposit, deposit, withdrawal)
         console.log("This our first customers name on his bank account " + bankAccount1.name);
-
+        console.log(bankAccount.register());
 
     })
 // 
