@@ -5,9 +5,6 @@ function bankAccount(name, initialDeposit, deposit, withdrawal, balance) {
     this.deposit = deposit;
     this.withdrawal = withdrawal;
     this.balance = balance;
-
-
-
 };
 
 bankAccount.prototype.initializeBalance = function() {
@@ -23,14 +20,8 @@ bankAccount.prototype.subtractWithdraw = function() {
 };
 
 bankAccount.prototype.showBalance = function() {
-    // return this.balance;
-    // return "This is your current balance " + this.balance;
-    // this.balance = this.initialDeposit;
     return this.balance;
-    // return this.initialDeposit;
 };
-
-
 
 // user interface logic
 $(document).ready(function() {
@@ -47,12 +38,6 @@ $(document).ready(function() {
         bankAccount1.addDeposit();
         bankAccount1.subtractWithdraw();
 
-        // console.log(bankAccount1.showBalance());
-        // console.log("This our first customers name on his bank account " + bankAccount1.name);
-        // console.log(bankAccount1.initializeBalance());
-        // console.log(bankAccount1.addDeposit());
-        // console.log(bankAccount1.subtractWithdraw());
-        // console.log(bankAccount1.showBalance());
         $("#show-balance").text("Your current balance is " + bankAccount1.showBalance());
     });
 });
