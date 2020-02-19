@@ -39,5 +39,8 @@ $(document).ready(function() {
         bankAccount1.subtractWithdraw();
 
         $("#show-balance").text("Your current balance is " + bankAccount1.showBalance());
+
+        $(".exchange-funds").show();
+
     });
 });
