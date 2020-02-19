@@ -1,5 +1,12 @@
-console.log("Hello world");
+// back end logic
+function bankAccount(name, initialDeposit, deposit, withdrawal) {
+    this.name = name;
+    this.initialDeposit = initialDeposit;
+    this.deposit = deposit;
+    this.withdrawal = withdrawal;
 
+
+};
 
 
 
