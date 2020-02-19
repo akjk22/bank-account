@@ -20,6 +20,10 @@ bankAccount.prototype.withdraw = function() {
     
 };
 
+bankAccount.prototype.showBalance = function() {
+
+};
+
 
 
 // user interface logic
@@ -33,7 +37,7 @@ $(document).ready(function() {
         
         var bankAccount1 = new bankAccount(name, initialDeposit, deposit, withdrawal)
         console.log("This our first customers name on his bank account " + bankAccount1.name);
-        console.log(bankAccount.register());
+        console.log(bankAccount1.register());
 
     })
 // 
