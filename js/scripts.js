@@ -20,7 +20,11 @@ $(document).ready(function() {
         var initialDeposit = $("#initial-deposit").val();
         var deposit = $("#deposit").val();
         var withdrawal = $("#withdraw").val();
-        // console.log(name, initialDeposit, deposit, withdrawal);
+        
+        var bankAccount1 = new bankAccount(name, initialDeposit, deposit, withdrawal)
+        console.log("This our first customers name on his bank account " + bankAccount1.name);
+
+
     })
 // 
 });
